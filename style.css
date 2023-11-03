@@ -77,16 +77,16 @@ header a {
 
 /* Add everything below here */
 
-.column {
+#hero .column {
   
 }
-.column.side {
-  float: left;
+#hero .column.side {
+ float: left;
   padding: 10px;
   width: 15%;
   vertical-align: top;
 }
-.column.main {
+#hero .column.main {
  float: right;
   padding: 10px;
   width: 85%;
