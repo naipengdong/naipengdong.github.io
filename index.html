@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naipeng Dong | Academic Profile</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 0.8s ease-out; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+
   <!-- Header -->
   <header class="bg-white shadow p-6">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between">
@@ -22,25 +30,36 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-blue-100 py-12">
+  <section class="relative bg-gradient-to-r from-blue-500 to-blue-300 py-20">
     <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
-      <img src="Naipeng.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 object-cover" />
-  <section class="bg-blue-100 py-12">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-3">Cyber Security & Software Engineering</h2>
-      <p class="text-lg">Researcher in AI Security, Quantum/Post-Quantum Security, and Privacy Engineering.</p>
+      <img src="Naipeng.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 object-cover border-4 border-white" />
+      <h2 class="text-5xl font-bold text-white mb-3 drop-shadow-lg">Dr. Naipeng Dong</h2>
+      <p class="text-xl text-white mb-6 drop-shadow-md">Lecturer at University of Queensland | AI Security · Post-Quantum Security · Software Engineering</p>
+      <div class="flex space-x-4">
+        <a href="#contact" class="bg-white text-blue-600 font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition">Contact Me</a>
+        <a href="#research" class="bg-white text-blue-600 font-semibold px-6 py-2 rounded-lg shadow hover:bg-gray-100 transition">Explore Research</a>
+      </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="max-w-5xl mx-auto py-12">
-    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-    <p>
-      I am an academic researcher and lecturer at the University of Queensland, specialising in AI security,
-      post-quantum cryptography, and privacy analysis. I lead and collaborate on multiple industry-linked
-      research projects, including QDSA and AEA Ignite, focusing on quantum-safe systems, AI-driven
-      security verification, and secure software ecosystems.
-    </p>
+  <section id="about" class="max-w-5xl mx-auto py-12 border-l-4 border-blue-500 pl-6 animate-fadeIn">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2">
+        <h3 class="text-3xl font-extrabold mb-6 tracking-wide text-gray-900">About Me</h3>
+        <p class="text-lg leading-relaxed text-gray-700 font-light">
+          I am an academic researcher and lecturer at the University of Queensland, specialising in AI security,
+          post-quantum cryptography, and privacy analysis. I lead and collaborate on multiple industry-linked
+          research projects, including QDSA and AEA Ignite, focusing on quantum-safe systems, AI-driven
+          security verification, and secure software ecosystems.
+        </p>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+        <img src="Naipeng.jpg" alt="Profile" class="w-28 h-28 rounded-full mx-auto mb-4 shadow" />
+        <h4 class="font-semibold text-gray-900 text-lg">Dr. Naipeng Dong</h4>
+        <p class="text-sm text-gray-600">University of Queensland</p>
+      </div>
+    </div>
   </section>
 
   <!-- Research -->
@@ -48,20 +67,19 @@
     <div class="max-w-5xl mx-auto">
       <h3 class="text-2xl font-semibold mb-4">Research</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center hover:scale-105 transform transition">
           <img src="AI.jpg" alt="AI Security" class="w-full h-32 object-cover rounded mb-3" />
           <h4 class="font-semibold">AI Security</h4>
         </div>
-        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center hover:scale-105 transform transition">
           <img src="Blockchain.jpg" alt="Blockchain Security" class="w-full h-32 object-cover rounded mb-3" />
           <h4 class="font-semibold">Blockchain & Smart Contracts</h4>
         </div>
-        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center hover:scale-105 transform transition">
           <img src="Protocol.png" alt="Cryptographic Protocols" class="w-full h-32 object-cover rounded mb-3" />
           <h4 class="font-semibold">Cryptographic Protocols</h4>
         </div>
       </div>
-
       <ul class="list-disc pl-6 space-y-2">
         <li>AI Agent Security and Autonomous Cyber Defence</li>
         <li>Quantum and Post-Quantum Security for Hardware & Cloud</li>
@@ -73,149 +91,126 @@
   </section>
 
   <!-- Teaching -->
-  <section id="teaching" class="max-w-5xl mx-auto py-12">
-    <h3 class="text-2xl font-semibold mb-4">Teaching</h3>
-    <ul class="list-disc pl-6 space-y-2">
-      <li>Information Security Essentials</li>
-      <li>Cybersecurity and Software Engineering</li>
-      <li>Developing new course: AI-assisted Software Engineering</li>
-      <li>Developing new course: Quantum Programming</li>
-    </ul>
-  </section>
-
-  <!-- Service -->
-  <section id="service" class="bg-white py-12 border-t">
+  <section id="teaching" class="bg-gray-50 py-12 border-t">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">Professional Service</h3>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>Chair, SDLT 2023 Proceedings</li>
-        <li>Local Chair, ICFEM 2024</li>
-        <li>Reviewer for top-tier security and software engineering venues</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="max-w-5xl mx-auto py-12">
-    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
-    <p>Email: <a href="mailto:naipeng.dong@uq.edu.au" class="text-blue-600 hover:underline">naipeng.dong@uq.edu.au</a></p>
-    <p>GitHub: <a href="https://github.com/naipengdong" class="text-blue-600 hover:underline">github.com/naipengdong</a></p>
-    <p>LinkedIn: <span class="text-gray-500">(optional link)</span></p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-200 py-6 text-center">
-    <p class="text-sm text-gray-600">© 2025 Naipeng Dong. All rights reserved.</p>
-  </footer>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naipeng Dong | Academic Profile</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
-</head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow p-6">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between">
-      <h1 class="text-3xl font-bold">Dr. Naipeng Dong</h1>
-      <nav class="mt-4 md:mt-0 space-x-4">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#research" class="hover:text-blue-600">Research</a>
-        <a href="#teaching" class="hover:text-blue-600">Teaching</a>
-        <a href="#service" class="hover:text-blue-600">Service</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-blue-100 py-12">
-    <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
-      <img src="Naipeng.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 object-cover" />
-  <section class="bg-blue-100 py-12">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-3">Cyber Security & Software Engineering</h2>
-      <p class="text-lg">Researcher in AI Security, Quantum/Post-Quantum Security, and Privacy Engineering.</p>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="max-w-5xl mx-auto py-12">
-    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-    <p>
-      I am an academic researcher and lecturer at the University of Queensland, specialising in AI security,
-      post-quantum cryptography, and privacy analysis. I lead and collaborate on multiple industry-linked
-      research projects, including QDSA and AEA Ignite, focusing on quantum-safe systems, AI-driven
-      security verification, and secure software ecosystems.
-    </p>
-  </section>
-
-  <!-- Research -->
-  <section id="research" class="bg-white py-12 border-t">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">Research</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
-          <img src="AI.jpg" alt="AI Security" class="w-full h-32 object-cover rounded mb-3" />
-          <h4 class="font-semibold">AI Security</h4>
+      <h3 class="text-2xl font-semibold mb-6">Teaching</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 shadow rounded-lg hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">CYBR7002: Secure Software Development</h4>
+          <p class="text-gray-700 text-sm mb-2">Coordinator & Lecturer, 2025</p>
+          <p class="text-gray-600 text-sm">Updated assessments to include AI tools, reduced quizzes, and added ethical AI guidance.</p>
         </div>
-        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
-          <img src="Blockchain.jpg" alt="Blockchain Security" class="w-full h-32 object-cover rounded mb-3" />
-          <h4 class="font-semibold">Blockchain & Smart Contracts</h4>
+        <div class="bg-white p-6 shadow rounded-lg hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">CYBR7901: Advanced Security</h4>
+          <p class="text-gray-700 text-sm mb-2">Coordinator, 2025</p>
+          <p class="text-gray-600 text-sm">Focused on new quantum-safe protocols and security case studies.</p>
         </div>
-        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
-          <img src="Protocol.png" alt="Cryptographic Protocols" class="w-full h-32 object-cover rounded mb-3" />
-          <h4 class="font-semibold">Cryptographic Protocols</h4>
+        <div class="bg-white p-6 shadow rounded-lg hover:shadow-lg transition">
+          <h4 class="font-semibold text-lg mb-2">AI-Assisted Software Engineering</h4>
+          <p class="text-gray-700 text-sm mb-2">Course Development, 2026</p>
+          <p class="text-gray-600 text-sm">New course in development integrating AI tools in software engineering practice.</p>
         </div>
       </div>
-
-      <ul class="list-disc pl-6 space-y-2">
-        <li>AI Agent Security and Autonomous Cyber Defence</li>
-        <li>Quantum and Post-Quantum Security for Hardware & Cloud</li>
-        <li>Privacy & Security in Software Ecosystems</li>
-        <li>Blockchain, Smart Contract Verification</li>
-        <li>Robustness and Privacy in Deep Learning</li>
-      </ul>
     </div>
   </section>
 
-  <!-- Teaching -->
-  <section id="teaching" class="max-w-5xl mx-auto py-12">
-    <h3 class="text-2xl font-semibold mb-4">Teaching</h3>
-    <ul class="list-disc pl-6 space-y-2">
-      <li>Information Security Essentials</li>
-      <li>Cybersecurity and Software Engineering</li>
-      <li>Developing new course: AI-assisted Software Engineering</li>
-      <li>Developing new course: Quantum Programming</li>
-    </ul>
-  </section>
-
-  <!-- Service -->
+  <!-- Service & Leadership -->
   <section id="service" class="bg-white py-12 border-t">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-4">Professional Service</h3>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>Chair, SDLT 2023 Proceedings</li>
-        <li>Local Chair, ICFEM 2024</li>
-        <li>Reviewer for top-tier security and software engineering venues</li>
-      </ul>
+      <h3 class="text-2xl font-semibold mb-6">Service & Leadership</h3>
+      <div class="space-y-6">
+        <div class="flex items-start space-x-4">
+          <div class="w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
+          <div>
+            <p class="font-semibold text-gray-800">Local Chair - IWQoS 2025</p>
+            <p class="text-gray-600 text-sm">Oversaw conference logistics and sessions.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
+          <div>
+            <p class="font-semibold text-gray-800">Publication Chair - RAID 2025</p>
+            <p class="text-gray-600 text-sm">Managed paper submissions and reviews.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
+          <div>
+            <p class="font-semibold text-gray-800">Publicity Chair - ICBC 2026</p>
+            <p class="text-gray-600 text-sm">Led promotion and outreach initiatives.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
+          <div>
+            <p class="font-semibold text-gray-800">PC Member - SDLT & ICFEM</p>
+            <p class="text-gray-600 text-sm">Participated in program committee for peer-reviewed conferences.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
+          <div>
+            <p class="font-semibold text-gray-800">Reviewer - TOSEM</p>
+            <p class="text-gray-600 text-sm">Reviewed articles for top-tier software engineering journal.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
+          <div>
+            <p class="font-semibold text-gray-800">Academic Advisor - BE SE & BEME SE</p>
+            <p class="text-gray-600 text-sm">Guided students across multiple programs.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="max-w-5xl mx-auto py-12">
-    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
-    <p>Email: <a href="mailto:naipeng.dong@uq.edu.au" class="text-blue-600 hover:underline">naipeng.dong@uq.edu.au</a></p>
-    <p>GitHub: <a href="https://github.com/naipengdong" class="text-blue-600 hover:underline">github.com/naipengdong</a></p>
-    <p>LinkedIn: <span class="text-gray-500">(optional link)</span></p>
+  <section id="contact" class="bg-gray-50 py-12 border-t">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-6">Contact Me</h3>
+      <p class="text-gray-700 mb-6">You can reach me via the following platforms:</p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="mailto:naipeng.dong@uq.edu.au" class="flex items-center space-x-2 bg-white shadow px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+          <img src="email-icon.png" alt="Email" class="w-6 h-6" />
+          <span>Email</span>
+        </a>
+        <a href="https://researchers.uq.edu.au/researcher/25114" class="flex items-center space-x-2 bg-white shadow px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+          <img src="uq-icon.png" alt="UQ Researcher" class="w-6 h-6" />
+          <span>UQ Researcher</span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=ZU5ZUnAAAAAJ&hl=en" class="flex items-center space-x-2 bg-white shadow px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+          <img src="scholar-icon.png" alt="Google Scholar" class="w-6 h-6" />
+          <span>Google Scholar</span>
+        </a>
+        <a href="https://www.linkedin.com/in/naipeng-dong-ab082a166/?originalSubdomain=au" class="flex items-center space-x-2 bg-white shadow px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+          <img src="linkedin-icon.png" alt="LinkedIn" class="w-6 h-6" />
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://orcid.org/0000-0002-XXXX-XXXX" class="flex items-center space-x-2 bg-white shadow px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+          <img src="orcid-icon.png" alt="ORCID" class="w-6 h-6" />
+          <span>ORCID</span>
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 py-6 text-center">
-    <p class="text-sm text-gray-600">© 2025 Naipeng Dong. All rights reserved.</p>
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <p>&copy; 2025 Dr. Naipeng Dong. All rights reserved.</p>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mt-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Back to Top</button>
+    </div>
   </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
-
