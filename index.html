@@ -1,113 +1,221 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Personal Web Page</title>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naipeng Dong | Academic Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
 </head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow p-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between">
+      <h1 class="text-3xl font-bold">Dr. Naipeng Dong</h1>
+      <nav class="mt-4 md:mt-0 space-x-4">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#research" class="hover:text-blue-600">Research</a>
+        <a href="#teaching" class="hover:text-blue-600">Teaching</a>
+        <a href="#service" class="hover:text-blue-600">Service</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<body>
-     <header>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-     </header>
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+      <img src="Naipeng.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 object-cover" />
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-3">Cyber Security & Software Engineering</h2>
+      <p class="text-lg">Researcher in AI Security, Quantum/Post-Quantum Security, and Privacy Engineering.</p>
+    </div>
+  </section>
 
-     <main>
-           <section id="home">
-                <div class="column side "> 
-                    <div class="profile">   
-                         <img src="Naipeng.jpg" alt="Avatar", class="profile-img">
-                         <h3>Dr. Naipeng Dong</h3>
-                         <h4>The University of Queensland</h4>
-                    </div>
-                    <div class="links">
-                        <h4>You can find me at:</h4>
-                        <li><a href="https://researchers.uq.edu.au/researcher/25114">UQ Researcher</a></li>
-                        <li><a href="https://scholar.google.com/citations?user=ZU5ZUnAAAAAJ&hl=en">Google Scholar</a></li>
-                        <li><a href="https://www.linkedin.com/in/naipeng-dong-ab082a166/?originalSubdomain=au">LinkedIn</a></li>
-                    </div>
-                    <div class="links">
-                        <h4>I am researching on  <br> Security and Privacy of </h4>
-                        <li>Cryptogarphic Protocols</li>
-                        <li>Blockchain</li>
-                         <li>Deep Neural Networks</li>
-                    </div>
-                </div>
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+    <p>
+      I am an academic researcher and lecturer at the University of Queensland, specialising in AI security,
+      post-quantum cryptography, and privacy analysis. I lead and collaborate on multiple industry-linked
+      research projects, including QDSA and AEA Ignite, focusing on quantum-safe systems, AI-driven
+      security verification, and secure software ecosystems.
+    </p>
+  </section>
 
-                 <div class="column main">  
-                    <div class="container">
-                    <h2>Github Projects</h2>
-                    </div>
-                    <div class="container">
-                        <img class="padded" src="Protocol.png" width="200" height="120">
-                        <div>
-                        <li><a href="https://github.com/n-crrn/Sarsaparilla">Stateful Verification [public] </a></li>
-                        <li><a href="https://github.com/BearPerson1/PAT_lib">PAT Library for Security Protocols [private]</a></li>
-                        <li><a href="https://github.com/zh0014in/SecProject">TLS model derived from packets</a></li>    
-                    </div>
-                    </div>
-                    
-                    <div class="container">
-                        <img class="padded" src="Blockchain.jpg" width="200" height="120">
-                        <div>
-                        <li><a href="https://github.com/naipengdong/Blockchain-Network-Simulator">A Blockchain Network Simulator [public] [In construction]</a></li>
-                        <li><a href="https://github.com/naipengdong/Blockchain-SGX">Blockchain SGX [private]</a></li>
-                        <li><a href="https://github.com/nvrdftd/formal-spec-design">Blockchain Based Booking System Formal Specification [private]</a></li>   
-                        <li><a href="https://github.com/waiyan1612/blockchain-analysis">Formal Analysis of Tendermint [public]</a></li>
-                        <li><a href="https://github.com/yuenshuning/ThesisDocs">Static Analysis of Smart Contract [private]</a></li>
-                    </div>
-                        <div>
-                        <p>Thesis student projects: </p>
-                        <li><a href="https://github.com/nikhilsurfingaus/ThesisProject-Static-Analysis-Solidity-Smart-Contracts">PySolSweep [public]</a></li>
-                        <li><a href="https://github.com/omarjarkas1997/SmartContractVerification">Smart Contract Verification in Dafny [public]</a></li>    
-                        <li><a href="https://github.com/EdmundLimKokHeng/BC_DEP">Build Ethereum Network and Smart Contract from Scratch[private]</a></li>
-                        
-                    </div>
-                    </div>
+  <!-- Research -->
+  <section id="research" class="bg-white py-12 border-t">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Research</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+          <img src="AI.jpg" alt="AI Security" class="w-full h-32 object-cover rounded mb-3" />
+          <h4 class="font-semibold">AI Security</h4>
+        </div>
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+          <img src="Blockchain.jpg" alt="Blockchain Security" class="w-full h-32 object-cover rounded mb-3" />
+          <h4 class="font-semibold">Blockchain & Smart Contracts</h4>
+        </div>
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+          <img src="Protocol.png" alt="Cryptographic Protocols" class="w-full h-32 object-cover rounded mb-3" />
+          <h4 class="font-semibold">Cryptographic Protocols</h4>
+        </div>
+      </div>
 
-                    <div class="container">
-                        <img class="padded" src="AI.jpg" width="200" height="120">
-                        <div> 
-                            <li><a href="https://github.com/zac-oar-uq/AI-Species-Recognition-Thesis">AI Species Recognition [public]</a></li>
-                            <li><a href="https://github.com/fangzhenzhao/AnomalousDetection">Anomaly Detection of DNN [private]</a></li>
-                            <li><a href="https://github.com/sjaradat/ICS-Project">Machine learning for ICS [private]</a></li>
-                        </div>
-                        
-                    </div>
-                 </div>
-           </section>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>AI Agent Security and Autonomous Cyber Defence</li>
+        <li>Quantum and Post-Quantum Security for Hardware & Cloud</li>
+        <li>Privacy & Security in Software Ecosystems</li>
+        <li>Blockchain, Smart Contract Verification</li>
+        <li>Robustness and Privacy in Deep Learning</li>
+      </ul>
+    </div>
+  </section>
 
-            <section id="about">
-                <div class="section-inner">
-                    <h2>About me</h2>
-                    <p> I am a Lecturer at the School of Electrical Engineering and Computer Science, Faculty of Engineering, Architecture and Information Technology, 
-the University of Queensland, Australia</p>
+  <!-- Teaching -->
+  <section id="teaching" class="max-w-5xl mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">Teaching</h3>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Information Security Essentials</li>
+      <li>Cybersecurity and Software Engineering</li>
+      <li>Developing new course: AI-assisted Software Engineering</li>
+      <li>Developing new course: Quantum Programming</li>
+    </ul>
+  </section>
 
-                    <h3>Education</h3>
-                        <p>Doctor of Philosophy, University of Luxembourg</p>
-                    <h3>Working History</h3>
-                        <p>Research Fellow, National University of Singapore</p>
-                </div> 
-              </section>
+  <!-- Service -->
+  <section id="service" class="bg-white py-12 border-t">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Professional Service</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Chair, SDLT 2023 Proceedings</li>
+        <li>Local Chair, ICFEM 2024</li>
+        <li>Reviewer for top-tier security and software engineering venues</li>
+      </ul>
+    </div>
+  </section>
 
-            <section id="contact">
-                <div class="section-inner">
-                    <h2>Contact me</h2>
-                    <p>You can find me on:</p>
-                        <p><a href="https://researchers.uq.edu.au/researcher/25114">UQ Researcher</a></p>
-                        <p><a href="https://scholar.google.com/citations?user=ZU5ZUnAAAAAJ&hl=en">Google Scholar</a></p>
-                        <p><a href="https://www.linkedin.com/in/naipeng-dong-ab082a166/?originalSubdomain=au">LinkedIn</a></p>
-                    
-                </div>      
-            </section>
-      </main>
-	<footer></footer>
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <p>Email: <a href="mailto:naipeng.dong@uq.edu.au" class="text-blue-600 hover:underline">naipeng.dong@uq.edu.au</a></p>
+    <p>GitHub: <a href="https://github.com/naipengdong" class="text-blue-600 hover:underline">github.com/naipengdong</a></p>
+    <p>LinkedIn: <span class="text-gray-500">(optional link)</span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center">
+    <p class="text-sm text-gray-600">© 2025 Naipeng Dong. All rights reserved.</p>
+  </footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naipeng Dong | Academic Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow p-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between">
+      <h1 class="text-3xl font-bold">Dr. Naipeng Dong</h1>
+      <nav class="mt-4 md:mt-0 space-x-4">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#research" class="hover:text-blue-600">Research</a>
+        <a href="#teaching" class="hover:text-blue-600">Teaching</a>
+        <a href="#service" class="hover:text-blue-600">Service</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+      <img src="Naipeng.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 object-cover" />
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-3">Cyber Security & Software Engineering</h2>
+      <p class="text-lg">Researcher in AI Security, Quantum/Post-Quantum Security, and Privacy Engineering.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+    <p>
+      I am an academic researcher and lecturer at the University of Queensland, specialising in AI security,
+      post-quantum cryptography, and privacy analysis. I lead and collaborate on multiple industry-linked
+      research projects, including QDSA and AEA Ignite, focusing on quantum-safe systems, AI-driven
+      security verification, and secure software ecosystems.
+    </p>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="bg-white py-12 border-t">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Research</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+          <img src="AI.jpg" alt="AI Security" class="w-full h-32 object-cover rounded mb-3" />
+          <h4 class="font-semibold">AI Security</h4>
+        </div>
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+          <img src="Blockchain.jpg" alt="Blockchain Security" class="w-full h-32 object-cover rounded mb-3" />
+          <h4 class="font-semibold">Blockchain & Smart Contracts</h4>
+        </div>
+        <div class="bg-gray-50 p-4 shadow rounded-lg text-center">
+          <img src="Protocol.png" alt="Cryptographic Protocols" class="w-full h-32 object-cover rounded mb-3" />
+          <h4 class="font-semibold">Cryptographic Protocols</h4>
+        </div>
+      </div>
+
+      <ul class="list-disc pl-6 space-y-2">
+        <li>AI Agent Security and Autonomous Cyber Defence</li>
+        <li>Quantum and Post-Quantum Security for Hardware & Cloud</li>
+        <li>Privacy & Security in Software Ecosystems</li>
+        <li>Blockchain, Smart Contract Verification</li>
+        <li>Robustness and Privacy in Deep Learning</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching" class="max-w-5xl mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">Teaching</h3>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Information Security Essentials</li>
+      <li>Cybersecurity and Software Engineering</li>
+      <li>Developing new course: AI-assisted Software Engineering</li>
+      <li>Developing new course: Quantum Programming</li>
+    </ul>
+  </section>
+
+  <!-- Service -->
+  <section id="service" class="bg-white py-12 border-t">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Professional Service</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Chair, SDLT 2023 Proceedings</li>
+        <li>Local Chair, ICFEM 2024</li>
+        <li>Reviewer for top-tier security and software engineering venues</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <p>Email: <a href="mailto:naipeng.dong@uq.edu.au" class="text-blue-600 hover:underline">naipeng.dong@uq.edu.au</a></p>
+    <p>GitHub: <a href="https://github.com/naipengdong" class="text-blue-600 hover:underline">github.com/naipengdong</a></p>
+    <p>LinkedIn: <span class="text-gray-500">(optional link)</span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-6 text-center">
+    <p class="text-sm text-gray-600">© 2025 Naipeng Dong. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
